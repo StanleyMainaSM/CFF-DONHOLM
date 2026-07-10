@@ -79,11 +79,7 @@ body {
         gap: 1rem;
         font-size: 0.9rem;
     }
-}  {
-    .tv-logo {
-        width: 100px;
-    }
-}
+}  
 /* Hero Section */
 .hero {
     background: linear-gradient(135deg, var(--primary-color) 0%, var(--secondary-color) 100%);
@@ -715,7 +711,10 @@ body {
         font-size: 0.85rem;
     }
 }
-
+.tv-logo {
+    width: 180px;
+    height: auto;
+}
 /* Animations */
 @keyframes fadeIn {
     from {
