@@ -26,71 +26,115 @@
     <!-- Page Header -->
     <section class="page-header">
         <h1>Contact Us</h1>
+        <p>We'd love to hear from you! Reach out anytime.</p>
     </section>
 
     <!-- Contact Content -->
     <section class="contact-content">
         <div class="container">
             <div class="contact-grid">
-                <!-- Contact Form -->
-                <div class="contact-form-section">
-                    <h2>Send us a Message</h2>
-                    <form id="contactForm" class="contact-form">
-                        <div class="form-group">
-                            <label for="name">Name</label>
-                            <input type="text" id="name" name="name" required>
-                        </div>
-                        <div class="form-group">
-                            <label for="email">Email</label>
-                            <input type="email" id="email" name="email" required>
-                        </div>
-                        <div class="form-group">
-                            <label for="phone">Phone (Optional)</label>
-                            <input type="tel" id="phone" name="phone">
-                        </div>
-                        <div class="form-group">
-                            <label for="subject">Subject</label>
-                            <input type="text" id="subject" name="subject" required>
-                        </div>
-                        <div class="form-group">
-                            <label for="message">Message</label>
-                            <textarea id="message" name="message" rows="5" required></textarea>
-                        </div>
-                        <button type="submit" class="btn btn-primary">Send Message</button>
-                    </form>
-                </div>
-
                 <!-- Contact Information -->
                 <div class="contact-info-section">
                     <h2>Contact Information</h2>
                     
                     <div class="info-box">
                         <h3>📞 Phone</h3>
-                        <p><a href="tel:+254720924750">0720 924750</a></p>
+                        <p><a href="tel:+254720924750"><strong>0720 924750</strong></a></p>
                     </div>
 
                     <div class="info-box">
                         <h3>📍 Address</h3>
-                        <p>PW82+3QC, Savannah Rd<br>
-                        Donholm, Nairobi<br>
-                        Kenya</p>
+                        <p><strong>CFF Donholm</strong><br>
+                        Savannah Rd<br>
+                        Donholm<br>
+                        Nairobi, Kenya<br>
+                        <em>Location Code: PW82+3QC</em></p>
                     </div>
 
                     <div class="info-box">
                         <h3>🕐 Service Times</h3>
-                        <p><strong>Sunday:</strong> 10:00 AM - 12:30 PM<br>
-                        <strong>Wednesday:</strong> 7:00 PM - 8:30 PM</p>
+                        <div style="font-size: 0.95rem;">
+                            <p><strong>SUNDAYS:</strong></p>
+                            <ul style="list-style: none; padding: 0;">
+                                <li>• Morning Prayer: 8:00 AM – 9:15 AM</li>
+                                <li>• First Service: 9:15 AM – 11:15 AM</li>
+                                <li>• Second Service: 11:00 AM – 1:15 PM</li>
+                            </ul>
+                            <p style="margin-top: 1rem;"><strong>MID-WEEK:</strong> Multiple services daily</p>
+                        </div>
                     </div>
 
                     <div class="info-box">
                         <h3>📱 Follow Us</h3>
-                        <p><a href="https://www.youtube.com/@APSTGITAHIDANIEL" target="_blank">YouTube</a> | <a href="https://www.instagram.com/apostlegitahidaniel/" target="_blank">Instagram</a></p>
+                        <ul style="list-style: none; padding: 0;">
+                            <li><a href="https://facebook.com/DonholmCff" target="_blank">📘 Facebook: Donholm CFF</a></li>
+                            <li><a href="https://facebook.com/DanielGitahi" target="_blank">📘 Facebook: Daniel Gitahi</a></li>
+                            <li><a href="https://www.youtube.com/@APSTGITAHIDANIEL" target="_blank">📺 YouTube: Pastor Daniel Gitahi</a></li>
+                            <li><a href="https://instagram.com/donholmcff" target="_blank">📸 Instagram: @donholmcff</a></li>
+                        </ul>
                     </div>
 
                     <div class="info-box prayer">
                         <h3>🙏 Prayer Request</h3>
-                        <p>Have a prayer request? Contact us and we'll be happy to pray with you.</p>
+                        <p>Have a prayer request? Contact us and we'll be happy to pray with you and support you in your spiritual journey.</p>
                     </div>
+
+                    <div class="info-box">
+                        <h3>📻 Radio Ministry</h3>
+                        <p><strong>98.6 Kigooco FM</strong></p>
+                        <ul style="list-style: none; padding: 0; font-size: 0.95rem;">
+                            <li>Monday – Friday: 5:45 PM – 6:00 PM</li>
+                            <li>Wednesday: 7:00 PM – 8:00 PM (Live)</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <!-- Contact Form -->
+                <div class="contact-form-section">
+                    <h2>Send us a Message</h2>
+                    <form id="contactForm" class="contact-form">
+                        <div class="form-group">
+                            <label for="name">Full Name *</label>
+                            <input type="text" id="name" name="name" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="email">Email Address *</label>
+                            <input type="email" id="email" name="email" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="phone">Phone Number</label>
+                            <input type="tel" id="phone" name="phone">
+                        </div>
+                        <div class="form-group">
+                            <label for="subject">Subject *</label>
+                            <input type="text" id="subject" name="subject" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="message">Message *</label>
+                            <textarea id="message" name="message" rows="6" required placeholder="Tell us how we can help..."></textarea>
+                        </div>
+                        <button type="submit" class="btn btn-primary">Send Message</button>
+                    </form>
+                    <p style="font-size: 0.9rem; color: #666; margin-top: 1rem;">We typically respond to messages within 24 hours. Thank you for reaching out!</p>
+                </div>
+            </div>
+
+            <!-- Additional Info Cards -->
+            <div style="margin-top: 3rem; display: grid; grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); gap: 2rem;">
+                <div class="info-box">
+                    <h3>💝 Support the Ministry</h3>
+                    <p>Your generous giving helps us continue our mission. Visit our giving page to learn about various ways you can support our ministry.</p>
+                    <a href="giving.html" class="btn btn-primary" style="margin-top: 1rem; display: inline-block;">Learn More</a>
+                </div>
+                <div class="info-box">
+                    <h3>📍 Visit Our Location</h3>
+                    <p>Come and join us for worship! We're located on Savannah Road in Donholm. See detailed directions and accessibility information on our location page.</p>
+                    <a href="location.html" class="btn btn-primary" style="margin-top: 1rem; display: inline-block;">Get Directions</a>
+                </div>
+                <div class="info-box">
+                    <h3>📅 Our Services</h3>
+                    <p>Curious about our complete schedule? Check out all our Sunday services, mid-week programs, and online ministry options.</p>
+                    <a href="services.html" class="btn btn-primary" style="margin-top: 1rem; display: inline-block;">View Services</a>
                 </div>
             </div>
         </div>
@@ -99,12 +143,34 @@
     <!-- Footer -->
     <footer class="footer">
         <div class="container">
-            <p>&copy; 2024 CFF Donholm. All rights reserved.</p>
-            <p>Let heaven fill your mind.</p>
-            <div class="footer-social">
-                <a href="https://www.youtube.com/@APSTGITAHIDANIEL" target="_blank">YouTube</a> | 
-                <a href="https://www.instagram.com/apostlegitahidaniel/" target="_blank">Instagram</a>
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h4>📱 Connect With Us</h4>
+                    <ul>
+                        <li><a href="https://facebook.com/DonholmCff" target="_blank">Facebook: donholmcffpage</a></li>
+                        <li><a href="https://www.youtube.com/@APSTGITAHIDANIEL" target="_blank">YouTube: pastor daniel gitahi</a></li>
+                        <li><a href="https://instagram.com/donholmcff" target="_blank">Instagram: donholmcff</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h4>🕐 Service Times</h4>
+                    <ul>
+                        <li><strong>Sundays:</strong> 8:00 AM – 1:15 PM</li>
+                        <li><strong>Mid-week:</strong> Multiple times daily</li>
+                        <li><strong>Radio:</strong> 98.6 Kigooco FM</li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h4>📞 Contact</h4>
+                    <ul>
+                        <li><a href="tel:+254720924750">Phone: 0720 924750</a></li>
+                        <li>Savannah Rd, Donholm</li>
+                        <li>Nairobi, Kenya</li>
+                    </ul>
+                </div>
             </div>
+            <p>&copy; 2024 CFF Donholm. All rights reserved.</p>
+            <p><em>"Let heaven fill your mind."</em> - Colossians 3:1-3</p>
         </div>
     </footer>
 
