@@ -134,6 +134,16 @@ body {
     font-weight: 800;
 }
 
+.logo-header {
+    text-align: center;
+}
+
+.logo-header img {
+    max-width: 200px;
+    height: auto;
+    margin-bottom: 1rem;
+}
+
 /* Buttons */
 .btn {
     display: inline-block;
@@ -158,6 +168,18 @@ body {
     box-shadow: 0 5px 15px rgba(245, 158, 11, 0.3);
 }
 
+.btn-secondary {
+    background-color: var(--secondary-color);
+    color: var(--white);
+    margin-right: 1rem;
+    margin-bottom: 1rem;
+}
+
+.btn-secondary:hover {
+    background-color: #2563eb;
+    transform: translateY(-2px);
+}
+
 /* Welcome Section */
 .welcome {
     padding: 60px 20px;
@@ -165,6 +187,7 @@ body {
 }
 
 .welcome h2,
+.leaders-section h2,
 .quick-info h2,
 .services-content h2,
 .about-section h2,
@@ -214,6 +237,50 @@ body {
 .card p {
     color: var(--text-light);
     line-height: 1.8;
+}
+
+/* Church Leaders Section */
+.leaders-section {
+    padding: 60px 20px;
+    background-color: var(--light-bg);
+}
+
+.leaders-content {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 3rem;
+    align-items: center;
+    margin-top: 2rem;
+}
+
+.leaders-image {
+    width: 100%;
+    height: auto;
+    border-radius: 10px;
+    box-shadow: 0 10px 30px rgba(0,0,0,0.15);
+    transition: transform 0.3s;
+}
+
+.leaders-image:hover {
+    transform: scale(1.02);
+}
+
+.leaders-info {
+    padding: 20px;
+}
+
+.leaders-info p {
+    font-size: 1.1rem;
+    color: var(--text-light);
+    line-height: 1.8;
+    margin-bottom: 1.5rem;
+}
+
+@media (max-width: 768px) {
+    .leaders-content {
+        grid-template-columns: 1fr;
+        gap: 1.5rem;
+    }
 }
 
 /* Quick Info Section */
@@ -387,6 +454,53 @@ body {
 .cta-section p {
     margin-bottom: 1.5rem;
     font-size: 1.05rem;
+}
+
+/* Altime TV Section */
+.altime-tv-section {
+    padding: 60px 20px;
+    background-color: var(--white);
+}
+
+.altime-tv-content {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 3rem;
+    align-items: center;
+}
+
+.altime-tv-text h2 {
+    color: var(--primary-color);
+    font-size: 2.2rem;
+    margin-bottom: 1rem;
+}
+
+.altime-subtitle {
+    color: var(--secondary-color);
+    font-weight: 600;
+    margin-bottom: 1rem;
+}
+
+.altime-tv-text p {
+    color: var(--text-light);
+    margin-bottom: 1.5rem;
+    line-height: 1.8;
+}
+
+.altime-links {
+    margin-top: 2rem;
+}
+
+.youtube-preview {
+    background-color: var(--light-bg);
+    padding: 15px;
+    border-radius: 10px;
+}
+
+@media (max-width: 768px) {
+    .altime-tv-content {
+        grid-template-columns: 1fr;
+    }
 }
 
 /* Contact Section */
@@ -668,6 +782,253 @@ body {
     font-weight: 600;
 }
 
+/* Media Section Styles */
+.media-content {
+    padding: 60px 20px;
+}
+
+.media-intro {
+    text-align: center;
+    margin-bottom: 3rem;
+}
+
+.media-intro h2 {
+    color: var(--primary-color);
+    font-size: 2.2rem;
+    margin-bottom: 1rem;
+}
+
+.media-section {
+    margin-bottom: 3rem;
+}
+
+.media-section h2 {
+    color: var(--primary-color);
+    font-size: 2rem;
+    margin-bottom: 2rem;
+}
+
+.media-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 2rem;
+    align-items: center;
+}
+
+@media (max-width: 768px) {
+    .media-grid {
+        grid-template-columns: 1fr;
+    }
+}
+
+.youtube-embed {
+    background-color: var(--light-bg);
+    padding: 15px;
+    border-radius: 10px;
+}
+
+.youtube-info {
+    padding: 20px;
+}
+
+.youtube-info h3 {
+    color: var(--primary-color);
+    margin-bottom: 1rem;
+}
+
+.youtube-info p {
+    color: var(--text-light);
+    margin-bottom: 1rem;
+    line-height: 1.8;
+}
+
+.instagram-info {
+    background-color: var(--light-bg);
+    padding: 30px;
+    border-radius: 10px;
+    text-align: center;
+}
+
+.instagram-info p {
+    color: var(--text-light);
+    margin-bottom: 1.5rem;
+    line-height: 1.8;
+}
+
+.instagram-handle {
+    margin-top: 1rem;
+    font-size: 1.2rem;
+    color: var(--primary-color);
+    font-weight: 600;
+}
+
+.content-offerings {
+    background-color: var(--light-bg);
+    padding: 40px;
+    border-radius: 10px;
+    margin: 3rem 0;
+}
+
+.content-offerings h2 {
+    color: var(--primary-color);
+    text-align: center;
+}
+
+.offerings-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 2rem;
+    margin-top: 2rem;
+}
+
+.offering-card {
+    background-color: var(--white);
+    padding: 25px;
+    border-radius: 8px;
+    border-left: 4px solid var(--accent-color);
+    transition: transform 0.3s;
+}
+
+.offering-card:hover {
+    transform: translateY(-5px);
+}
+
+.offering-card h3 {
+    color: var(--primary-color);
+    margin-bottom: 1rem;
+}
+
+.offering-card p {
+    color: var(--text-light);
+    line-height: 1.8;
+}
+
+.how-to-watch {
+    margin: 3rem 0;
+}
+
+.how-to-watch h2 {
+    color: var(--primary-color);
+}
+
+.watch-options {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 2rem;
+    margin-top: 2rem;
+}
+
+.watch-option {
+    background-color: var(--light-bg);
+    padding: 25px;
+    border-radius: 8px;
+    border-top: 4px solid var(--secondary-color);
+}
+
+.watch-option h3 {
+    color: var(--primary-color);
+    margin-bottom: 1rem;
+}
+
+.watch-option p {
+    color: var(--text-light);
+    margin-bottom: 1rem;
+    line-height: 1.8;
+}
+
+.watch-option a {
+    color: var(--secondary-color);
+    text-decoration: none;
+    font-weight: 600;
+}
+
+.watch-option a:hover {
+    text-decoration: underline;
+}
+
+.media-contact {
+    background-color: var(--accent-color);
+    color: var(--white);
+    padding: 30px;
+    border-radius: 10px;
+    text-align: center;
+    margin: 2rem 0;
+}
+
+.media-contact h2 {
+    color: var(--white);
+}
+
+.media-contact p {
+    margin-bottom: 1.5rem;
+}
+
+.share-section {
+    background-color: var(--light-bg);
+    padding: 30px;
+    border-radius: 10px;
+    text-align: center;
+    margin: 2rem 0;
+}
+
+.share-section h2 {
+    color: var(--primary-color);
+}
+
+.share-links {
+    margin-top: 1.5rem;
+}
+
+.share-links p {
+    margin: 0.5rem 0;
+    color: var(--text-light);
+}
+
+.share-links a {
+    color: var(--secondary-color);
+    text-decoration: none;
+    font-weight: 600;
+}
+
+.share-links a:hover {
+    text-decoration: underline;
+}
+
+.media-quote {
+    text-align: center;
+    padding: 30px;
+    background-color: var(--light-bg);
+    border-radius: 10px;
+    border-left: 4px solid var(--accent-color);
+    margin-top: 2rem;
+}
+
+.media-quote p {
+    font-size: 1.1rem;
+    color: var(--primary-color);
+    font-weight: 600;
+}
+
+.social-highlight {
+    background-color: rgba(245, 158, 11, 0.1);
+    padding: 15px;
+    border-radius: 8px;
+    margin-top: 1rem;
+    border-left: 3px solid var(--accent-color);
+}
+
+.social-highlight p {
+    color: var(--primary-color);
+    font-weight: 600;
+    margin: 0;
+}
+
+.social-icons a {
+    margin: 0 10px;
+    font-size: 1.5rem;
+    text-decoration: none;
+}
+
 /* Footer */
 .footer {
     background-color: var(--primary-color);
@@ -679,6 +1040,48 @@ body {
 
 .footer p {
     margin: 0.5rem 0;
+}
+
+.footer-social {
+    margin-top: 1rem;
+}
+
+.footer-social a {
+    color: var(--accent-color);
+    text-decoration: none;
+    font-weight: 600;
+}
+
+.footer-social a:hover {
+    text-decoration: underline;
+}
+
+.tv-logo {
+    width: 180px;
+    height: auto;
+}
+
+/* Animations */
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+.welcome,
+.leaders-section,
+.quick-info,
+.about-content,
+.services-content,
+.contact-content,
+.location-content,
+.giving-content,
+.media-content,
+.altime-tv-section {
+    animation: fadeIn 0.5s ease-in;
 }
 
 /* Responsive Design */
@@ -696,6 +1099,7 @@ body {
     }
 
     .welcome h2,
+    .leaders-section h2,
     .quick-info h2,
     .services-content h2,
     .about-section h2,
@@ -710,27 +1114,4 @@ body {
         gap: 0.8rem;
         font-size: 0.85rem;
     }
-}
-.tv-logo {
-    width: 180px;
-    height: auto;
-}
-/* Animations */
-@keyframes fadeIn {
-    from {
-        opacity: 0;
-    }
-    to {
-        opacity: 1;
-    }
-}
-
-.welcome,
-.quick-info,
-.about-content,
-.services-content,
-.contact-content,
-.location-content,
-.giving-content {
-    animation: fadeIn 0.5s ease-in;
 }
