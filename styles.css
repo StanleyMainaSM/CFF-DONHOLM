@@ -37,7 +37,7 @@ body {
 .navbar {
     background-color: var(--primary-color);
     color: var(--white);
-    position: sticky;
+    position: absolute;
     top: 0;
     z-index: 1000;
     box-shadow: 0 2px 5px rgba(0,0,0,0.1);
